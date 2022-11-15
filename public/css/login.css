@@ -1,0 +1,21 @@
+.btnlogin{
+    height: 50px;
+    border-radius: 50px;
+    width: 130px;
+    text-align: center;
+    background-color: #c60303;
+    color: #ffffff;
+}
+.btnlogin:hover{
+    background-color: #fff;
+    color: #000;
+
+}
+
+.signup{
+    margin-top: 10px;
+    color: black;
+}
+.signup:hover{
+    color: #c60303;
+}

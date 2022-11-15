@@ -1,0 +1,22 @@
+.btnreg{
+    height: 50px;
+    border-radius: 50px;
+    width: 130px;
+    text-align: center;
+    background-color: #000;
+    color: #ffffff;
+}
+
+.btnreg:hover{
+    background-color: #fff;
+    color: #000;
+
+}
+
+.signin{
+    color: black;
+}
+
+.signin:hover{
+    color: #c60303;
+}

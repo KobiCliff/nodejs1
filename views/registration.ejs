@@ -1,0 +1,42 @@
+<%- include('layouts/header.ejs') %>        
+<nav>
+    <ul>
+        <li style="background-color:#c60303;"><a href="/pages/login" style="color:#000000;">Sign In</a>    
+        </li>
+    </ul>
+</nav>
+<div class="form">
+    <div class="about">
+        <img src="images/logo.png" alt="">    
+
+        <form
+        action="/pages/post/registration"
+        method="post"
+        enctype="application/x-www-form-urlencoded"
+        >
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" name="fullname" id="fullname" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password" required><br>
+            <label for="cpassword">Confirm Password:</label><br>
+            <input type="password" name="cpassword" id="cpassword" required><br>
+            <input type="checkbox" id="getpsw" onclick="myFunction()">Show Password<br>
+            <script>
+            function myFunction() {
+                var x = document.getElementById("password");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+            }
+            </script>
+            <button type="submit" class="btnreg">Proceed</button>
+        </form>
+
+        Already have an account? <a class="signin" href="/pages/login">Sign In</a>
+    </div>
+</div>
+<%- include('layouts/footer.ejs') %>

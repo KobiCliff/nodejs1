@@ -1,0 +1,14 @@
+.hbody{
+    background-image: url('/images/8.jpg');
+    background-size: cover;
+    height: 599px;
+}
+
+.about{
+    position: absolute;
+    left: 15%;
+    top: 22%;
+    background-color: #fff;
+    height: 71%;
+    width: 70%;
+}
